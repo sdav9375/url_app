@@ -1,0 +1,10 @@
+<h1>New Url</h1>
+<p>Enter the URL you would like shortened.</p>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', urls_path %>
+
+<% if params[:id] %>
+<%= url_url(params[:id]) %>
+<% end %>
